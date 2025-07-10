@@ -3,7 +3,7 @@
 medicamentos = []
 def agregar_Medicamentos():
     while True:
-        nombreMedicamento = input("Nombre Medicamento: ")
+        nombreMedicamento = input("\nIngrese el nombre del Medicamento: ")
         if not nombreMedicamento is nombreMedicamento.isspace():
             medicamentos.append(nombreMedicamento)
             print("Se ha agregado el medicamento")
@@ -13,17 +13,17 @@ def agregar_Medicamentos():
 
 def entregar_Medicamentos():
     if(len(medicamentos) > 0):
-        print(f"Se entregara el medicamento {medicamentos.pop()}")
+        print(f"\nSe entregara el medicamento {medicamentos.pop()}")
     else:
-        print("No hay medicamentos para entregar!")
+        print("\nNo hay medicamentos para entregar!")
 
 def mostrar_Medicamentos():
     cont = len(medicamentos)
+    print("\n- - - - - MEDICAMENTOS - - - - -")
     if (len(medicamentos) > 0):
         for i in medicamentos:
             print(f"Medicamento {cont}: {i}")
             cont = cont - 1
     else:
-        print("No hay medicamentos que mostrar")
-
+        print("\nNo hay medicamentos que mostrar")
 

@@ -2,27 +2,27 @@ from collections import deque
 cola = deque()
 def ingreso():
     while True:
-        nombre = input("Ingrese su nombre: ")
+        nombre = input("\nIngrese su nombre: ")
         if nombre.strip() != "":
             cola.append(nombre)
             print("Se ha registrado con exito")
             break
         else:
-            print("No es valido el nombre...")
+            print("\nNo es valido el nombre...")
 
 def atender():
     if len(cola) > 0:
         a = cola.popleft()
-        print(f"Se ha atendido a {a}")
+        print(f"\nSe ha atendido a {a}")
     else:
-        print("No hay pacientes que atender...")
+        print("\nNo hay pacientes que atender...")
 
 def mostrar_cola():
     if len(cola) > 0:
-        print("---Pacientes---")
+        print("\n---Pacientes---")
         s = 1
         for i in cola:
             print(f"-{s} {i}")
             s += 1
     else:
-        print("La cola esta vacia")
+        print("\nLa cola esta vacia")
