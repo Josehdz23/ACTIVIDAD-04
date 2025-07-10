@@ -17,7 +17,3 @@ def atender():
 def mostrar_cola():
     for i in cola:
         print(i)
-
-ingreso()
-atender()
-mostrar_cola()
