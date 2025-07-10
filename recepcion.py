@@ -19,7 +19,10 @@ def atender():
 
 def mostrar_cola():
     if len(cola) > 0:
+        print("---Pacientes---")
+        s = 1
         for i in cola:
-            print(i)
+            print(f"-{s} {i}")
+            s += 1
     else:
         print("La cola esta vacia")
