@@ -18,11 +18,11 @@ def entregar_Medicamentos():
         print("No hay medicamentos para entregar!")
 
 def mostrar_Medicamentos():
-    cont = 1
+    cont = len(medicamentos)
     if (len(medicamentos) > 0):
         for i in medicamentos:
             print(f"Medicamento {cont}: {i}")
-            cont = cont + 1
+            cont = cont - 1
     else:
         print("No hay medicamentos que mostrar")
 
