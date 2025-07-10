@@ -15,5 +15,8 @@ def atender():
     print(f"Se ha atendido a {a}")
 
 def mostrar_cola():
-    for i in cola:
-        print(i)
+    if len(cola) > 0:
+        for i in cola:
+            print(i)
+    else:
+        print("La cola esta vacia")
