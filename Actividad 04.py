@@ -3,7 +3,7 @@ from farmacia import agregar_Medicamentos, entregar_Medicamentos, mostrar_Medica
 from recepcion import ingreso, mostrar_cola, atender
 
 def menu():
-    print("- - - - CLINICA - - - -\n1. Agregar paciente\n2. Atender pacientes\n3. Mostrar pacientes\n4. Agregar Medicamentos\n5. Entregar Medicamentos\n6. Mostrar medicamentos\n7. Salir")
+    print("\n- - - - CLINICA - - - -\n1. Agregar paciente\n2. Atender pacientes\n3. Mostrar pacientes\n4. Agregar Medicamentos\n5. Entregar Medicamentos\n6. Mostrar medicamentos\n7. Salir")
 
 def main():
     while True:
