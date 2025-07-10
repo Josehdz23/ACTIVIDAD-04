@@ -10,7 +10,10 @@ def agregar_Medicamentos():
             print("Debe de ingresar un medicamento!!!")
 
 def entregar_Medicamentos():
-    print(f"Se entregara el medicamento {medicamentos.pop()}")
+    if(len(medicamentos) > 0):
+        print(f"Se entregara el medicamento {medicamentos.pop()}")
+    else:
+        print("No hay medicamentos para entregar!")
 
 def mostrar_Medicamentos():
     if (len(medicamentos) > 0):
