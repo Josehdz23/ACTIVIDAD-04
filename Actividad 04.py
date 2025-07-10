@@ -25,6 +25,7 @@ def main():
                     mostrar_Medicamentos()
                 case 7:
                     print("Saliendo...")
+                    break
                 case _:
                     print("Esa opción no existe!!")
         except Exception as ex:
