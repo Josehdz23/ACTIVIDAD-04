@@ -11,8 +11,11 @@ def ingreso():
             print("No es valido el nombre...")
 
 def atender():
-    a = cola.popleft()
-    print(f"Se ha atendido a {a}")
+    if len(cola) > 0:
+        a = cola.popleft()
+        print(f"Se ha atendido a {a}")
+    else:
+        print("No hay pacientes que atender...")
 
 def mostrar_cola():
     if len(cola) > 0:
