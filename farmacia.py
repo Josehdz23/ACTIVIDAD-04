@@ -6,6 +6,7 @@ def agregar_Medicamentos():
         nombreMedicamento = input("Nombre Medicamento: ")
         if not nombreMedicamento is nombreMedicamento.isspace():
             medicamentos.append(nombreMedicamento)
+            break
         else:
             print("Debe de ingresar un medicamento!!!")
 
