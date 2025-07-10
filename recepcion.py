@@ -6,7 +6,9 @@ def ingreso():
             cola = deque()
             cola.append(nombre)
             print("Se ha registrado con exito")
-
+            break
+        else:
+            print("No es valido el nombre...")
 
 def atender():
     a = cola.popleft()
