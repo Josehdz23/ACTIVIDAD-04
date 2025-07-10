@@ -1,9 +1,12 @@
 from collections import deque
 def ingreso():
-    nombre = input("Ingrese su nombre: ")
-    cola = deque()
-    cola.append(nombre)
-    print("Se ha registrado con exito")
+    while True:
+        nombre = input("Ingrese su nombre: ")
+        if nombre.strip() != "":
+            cola = deque()
+            cola.append(nombre)
+            print("Se ha registrado con exito")
+
 
 def atender():
     a = cola.popleft()
