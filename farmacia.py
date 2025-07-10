@@ -26,4 +26,3 @@ def mostrar_Medicamentos():
             cont = cont - 1
     else:
         print("\nNo hay medicamentos que mostrar")
-
