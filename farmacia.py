@@ -2,4 +2,12 @@
 
 medicamentos = []
 def agregar_Medicamentos():
-    print("")
+    while True:
+        nombreMedicamento = input("Nombre Medicamento: ")
+        if not nombreMedicamento is nombreMedicamento.isspace():
+            medicamentos.append(nombreMedicamento)
+        else:
+            print("Debe de ingresar un medicamento!!!")
+
+
+
