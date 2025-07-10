@@ -1,9 +1,9 @@
 from collections import deque
+cola = deque()
 def ingreso():
     while True:
         nombre = input("Ingrese su nombre: ")
         if nombre.strip() != "":
-            cola = deque()
             cola.append(nombre)
             print("Se ha registrado con exito")
             break
@@ -17,3 +17,7 @@ def atender():
 def mostrar_cola():
     for i in cola:
         print(i)
+
+ingreso()
+atender()
+mostrar_cola()
